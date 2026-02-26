@@ -1,6 +1,7 @@
 # Tsynth
 
 **A simple, lightweight speech synthesizer in C.**  
+
 Converts ARPAbet phoneme sequences into synthetic speech using formant synthesis.
 
 This project is a fun, educational take on classic TTS techniques in raw C. It’s ideal for embedded use, learning DSP-style synthesis, or just playing around with phoneme-to-wave conversion.
@@ -31,12 +32,15 @@ Or alternatively for the compacted code:
 
 # Run
 `./tsynth -o output.wav -i input_phonemes.txt`
+
 `input_phonemes.txt` Should contain your phonemes
 
 Or you can use:
+
 `./compact_tsynth -o output.wav -i input_phonemes.txt`
 
 If you run `./tsynth -h` it should show this help menu:
+
 ```text
 Formant Synthesizer
 
