@@ -546,7 +546,7 @@ static char* read_text_file(const char *filename) {
 }
 
 static void print_usage(const char *prog) {
-    printf("Formant Synthesizer (Plosive Burst Fix)\n\n");
+    printf("Formant Synthesizer\n\n");
     printf("Usage: %s [options] \"phoneme text\"\n", prog);
     printf("   or: %s [options] -i input.txt\n\n", prog);
     printf("Options:\n");
