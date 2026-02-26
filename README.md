@@ -57,3 +57,15 @@ Options:
 ```
 
 Same goes for `./compact_tsynth -h` but the usage shows `./compact_tsynth` instead of `./tsynth`
+
+# What's inside
+- `synth.c` - Core synthesizer implementation
+- `compacted_synth.c` - Compacted synthesizer implementation
+- `LICENSE` - MIT License
+
+# How it works (High level)
+Tsynth uses classic **formant synthesis**, with:
+- 5-formant resonator model using biquad filters (direct form II) with time-varying center frequencies
+- Voicing control: blends periodic "buzz" (sawtooth oscillator) with noise "hiss" based on phoneme voicing values
+- Envelope shaping: attack/sustain/release per phoneme + crossfading between segments
+- Soft clipping + normalization: prevents distortion while maximizing output level
