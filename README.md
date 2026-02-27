@@ -27,6 +27,7 @@ cd Tsynth
 
 Tsynth is written in standard C and compiles with gcc:
 `gcc -std=c99 -O3 -lm -o tsynth synth.c`
+
 Or alternatively for the compacted code:
 `gcc -std=c99 -O3 -lm -o compact_tsynth compacted_synth.c`
 
